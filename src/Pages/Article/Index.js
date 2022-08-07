@@ -1,22 +1,21 @@
 import React from "react";
 import Card from "./Card";
 import { articleConstant } from "../../Constants/articleConstant";
-import { PageContainer, CardContainer } from "./style";
-import { PageTitle } from "../../styles/globalStyles";
+import { Container, CardContainer } from "./style";
 import Scroll from "../../Components/Scroll/index";
 
-function ArticlePage({ selectedId }) {
+function Article({ selectedId }) {
   return (
-    <PageContainer>
-      <Scroll scrollPoint={65} visibleLength={500} direction={"up"} />
+    <Container>
+      <Scroll scrollPoint={66} visibleLength={500} direction={"up"} />
       <Scroll scrollPoint={99999} visibleLength={65} direction={"down"} />
-      <PageTitle>My Articles</PageTitle>
+      <h1 className="article-heading">My Articles</h1>
       <CardContainer>
         {articleConstant.map((card) => (
           <Card key={card.id} {...card} isSelected={card.id === selectedId} />
         ))}
       </CardContainer>
-    </PageContainer>
+    </Container>
   );
 }
-export default ArticlePage;
+export default Article;

@@ -2,12 +2,23 @@ import styled from "styled-components";
 import {colors} from "../../styles/globalStyles"
 import {motion} from "framer-motion";
 
-export const MainPageContainer = styled.div`
+export const Container = styled.div`
   width: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .main-heading {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 55px;
+    font-family: "Lato", sans-serif;
+    color: ${colors.textColor};
+    margin: 20px 0 0 0;
+  }
 `;
 
 export const WelcomeContainer = styled.div`
@@ -17,19 +28,13 @@ export const WelcomeContainer = styled.div`
   justify-content: center;
   height: 100%;
 `;
-export const MainPageH1 = styled.h1`
-  font-size: 40px;
-  font-family: "Lato", sans-serif;
-  color: ${colors.textColor};
-  margin: 20px 0 0 0;
-`;
 
-export const MainPageP = styled(motion.p)`
+export const Description = styled(motion.p)`
   color: ${colors.secondary};
-  font-size: 25px;
+  font-size: 30px;
   margin: 3px;
   font-style: italic;
-  font-size: 25px;
   margin-top: 0px;
   font-weight: 200;
+  padding-top: 15px
 `;

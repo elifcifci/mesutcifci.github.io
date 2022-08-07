@@ -3,7 +3,6 @@ import {
     CardContentContainer,
     CardContent,
     CardImageContainer,
-    ArticleImg,
     TitleContainer,
     Title,
     LinkContainer,
@@ -19,11 +18,11 @@ function Card({ id, title, imgLink, mediumLink }) {
         <CardContentContainer>
           <CardContent layoutId={`card-container-${id}`}>
             <CardImageContainer layoutId={`card-image-container-${id}`}>
-              <ArticleImg src={imgLink} alt="" />
+              <img className="card-img" src={imgLink} alt="" />
             </CardImageContainer>
   
             <TitleContainer layoutId={`title-container-${id}`}>
-              <Title>{title}</Title>
+              <h2 className="card-title">{title}</h2>
             </TitleContainer>
   
             <LinkContainer>

@@ -1,48 +1,30 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
-export const sizes = {
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
-
 export const devices = {
-  mobileS: `(min-width: ${sizes.mobileS})`,
-  mobileM: `(min-width: ${sizes.mobileM})`,
-  mobileL: `(min-width: ${sizes.mobileL})`,
-  tablet: `(min-width: ${sizes.tablet})`,
-  laptop: `(min-width: ${sizes.laptop})`,
-  laptopL: `(min-width: ${sizes.laptopL})`,
-  desktop: `(min-width: ${sizes.desktop})`,
+  mobileS: `(min-width: 320px)`,
+  mobileM: `(min-width: 375px)`,
+  mobileL: `(min-width: 425px)`,
+  tablet: `(min-width: 768px)`,
+  laptop: `(min-width: 1024px)`,
+  laptopL: `(min-width: 1440px)`,
+  desktop: `(min-width: 2560px)`,
 };
 
 export const colors = {
   pageBackground: "linear-gradient(to bottom, #232526, #3a3d40)",
-  primary: "#357C3C",
-  secondary: "#9EB23B",
+  primary: "#01411C",
+  secondary: "#6B8E23",
   tertiary: "#2d2626",
   textColor: "#fff",
   borderColor: "#fff",
-  mobilNavbarBackground:"#fff",
+  mobileNavbarBackground:"#fff",
   gray: "#303841",
   darkGray: "#2e2727",
   cardTitle: "rgb(45, 38, 38)",
   cardDetail: "#131215",
   openedCardBackground: "rgba(0, 0, 0, 0.8)",
 }
-
-export const PageTitle = styled.h1` 
-  display: block;
-  color: ${colors.textColor};
-  text-align: center;
-  margin-top: 70px;
-
-`;
 
 const GlobalStyle = createGlobalStyle`
 body {
