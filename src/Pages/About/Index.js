@@ -2,9 +2,9 @@
 import React from "react";
 import { Avatar } from "react-lorem-ipsum";
 
-//Constants
-import { contactConstants } from "../../Constants/contactConstants";
-import { personConstant } from "../../Constants/personConstant";
+//constants
+import { contactConstants } from "../../constants/contactConstants";
+import { personConstant } from "../../constants/personConstant";
 
 //Styles
 import { colors } from "../../styles/globalStyles";

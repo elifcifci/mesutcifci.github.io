@@ -1,15 +1,15 @@
 import React from "react";
-import Main from "./Pages/Main";
-import About from "./Pages/About";
-import Project from "./Pages/Project";
-import Article from "./Pages/Article";
-import OpenedCard from "./Pages/Article/OpenedCard";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Main from "./pages/Main";
+import About from "./pages/About";
+import Project from "./pages/Project";
+import Article from "./pages/Article";
+import OpenedCard from "./pages/Article/OpenedCard";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import GlobalStyle from "./styles/globalStyles";
 import { AnimateSharedLayout } from "framer-motion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Scroll from "./Components/Scroll/index";
+import Scroll from "./components/Scroll/index";
 
 function App() {
   return (

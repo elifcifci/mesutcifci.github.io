@@ -1,6 +1,6 @@
 import React from "react";
 
-import { personConstant } from "../../Constants/personConstant";
+import { personConstant } from "../../constants/personConstant";
 import { Container, WelcomeContainer, Description } from "./styles";
 
 const variants = {
