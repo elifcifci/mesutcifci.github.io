@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { colors, devices } from "../../styles/globalStyles";
 
 export const Container = styled.div`
@@ -49,12 +48,12 @@ export const AboutMe = styled.p`
 
 export const ContactContainer = styled.div`
   margin-top: 50px;
-`;
 
-export const ContactLink = styled(motion.a)`
-  text-decoration: none;
-  color: ${colors.textColor};
-  width: 50px;
-  box-sizing: border-box;
-  padding: 7px;
+  .contact_link {
+    text-decoration: none;
+    color: ${colors.textColor};
+    width: 50px;
+    box-sizing: border-box;
+    padding: 7px;
+  }
 `;

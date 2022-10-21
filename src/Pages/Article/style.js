@@ -227,24 +227,29 @@ export const DetailCloseContainer = styled(motion.div)`
 export const OpenedCardContainer = styled(motion.div)`
   width: 100%;
   height: 100%;
-  position: relative;
+  position: fixed;
   display: block;
   pointer-events: none;
-  top: 40px;
+  top: 80px;
   left: 0;
   right: 0;
-  position: fixed;
   z-index: 1;
   overflow: hidden;
-  padding: 120px 10px;
+  padding: 0 10px;
   box-sizing: border-box;
 
   @media ${devices.mobileL} {
-    padding: 120px 50px;
+    padding: 0 50px;
   }
 
+  @media ${devices.laptop} {
+    top: 100px;
+  }
+  @media ${devices.laptop} {
+    top: 180px;
+  }
   @media ${devices.desktop} {
-    top: 200px;
+    top: 250px;
   }
 `;
 

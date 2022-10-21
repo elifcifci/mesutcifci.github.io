@@ -1,17 +1,16 @@
+//React
 import React from "react";
-import { name, surname, Avatar } from "react-lorem-ipsum";
+import { Avatar } from "react-lorem-ipsum";
 
+//Constants
 import { contactConstants } from "../../Constants/contactConstants";
 import { personConstant } from "../../Constants/personConstant";
-import { colors } from "../../styles/globalStyles";
 
-import {
-  Container,
-  Wrapper,
-  AboutMe,
-  ContactContainer,
-  ContactLink,
-} from "./styles";
+//Styles
+import { colors } from "../../styles/globalStyles";
+import { Container, Wrapper, AboutMe, ContactContainer } from "./styles";
+
+import { motion } from "framer-motion";
 
 const variants = {
   hover: {
@@ -27,19 +26,19 @@ const About = () => {
       <Wrapper>
         <Avatar gender="female" className="about-img" />
 
-        <AboutMe>
-          {personConstant[3]}
-        </AboutMe>
+        <AboutMe>{personConstant[3]}</AboutMe>
       </Wrapper>
 
+      {/* There is not link address for href attributes for the template. 
+      User should add "contactLink" in "contactConstants".*/}
       <ContactContainer>
         {contactConstants.map((contactConstant, index) => {
           return (
-            <ContactLink
+            <motion.a
               key={index}
               href={contactConstant.contactLink}
-              target="_blank"
-              className={`${contactConstant.contactIcon}`}
+              // target="_blank"
+              className={`${contactConstant.contactIcon} contact_link`}
               variants={variants}
               whileHover="hover"
             />
