@@ -16,7 +16,7 @@ With this project, I aimed to collect all the projects, articles and resume of a
 2. **Run** npm install
 3. **Run** npm start
 
-**Not:** The project run "http://localhost:3000/portfolio-template"
+**Not:** The project run "http://localhost:3000"
 
 ## What does the project look like?
 
