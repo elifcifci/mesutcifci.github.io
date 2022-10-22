@@ -18,7 +18,7 @@ function App() {
       <GlobalStyle />
       {/* The AnimateSharedLayout component enables you to perform layout animations between different components that share a layoutId as they're added/removed. */}
       <AnimateSharedLayout>
-        <Router basename="/portfolio-template">
+        <Router>
           <Navbar />
           <Scroll
             scrollPoint={66}
